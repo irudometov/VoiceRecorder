@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FCFileManager
 
 // The main view controller of the app to record and play audio.
 
