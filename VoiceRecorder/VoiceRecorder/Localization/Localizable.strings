@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  VoiceRecorder
+
+  Created by Ilya Rudometov on 03/10/2017.
+  Copyright © 2017 Ilya Rudometov. All rights reserved.
+*/
+
+/* VoiceRecorderViewController */
+
+// Statuses
+
+"status_record_voice" = "Tap to 'Record audio' button to start recording voice.";
+"status_recording" = "Recording...";
+"status_uploading" = "Uploading audio...";
+"status_play_audio" = "Tap to Play button to play audio.";
+"status_playing_audio" = "Playing audio...";
+
+// Error
+
+"alert_title_error" = "An error has occured.";

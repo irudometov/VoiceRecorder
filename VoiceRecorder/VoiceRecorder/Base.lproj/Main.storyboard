@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voice Recorder View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VoiceRecorderViewController" customModule="VoiceRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eyg-CQ-Kyd" customClass="TapAndHoldButton" customModule="VoiceRecorder" customModuleProvider="target">
+                                <rect key="frame" x="142" y="595" width="91" height="30"/>
+                                <state key="normal" title="Record audio"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VL8-Eu-jTW" userLabel="Reset Button">
+                                <rect key="frame" x="168" y="595" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAj-Mu-hkz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAZ-OO-SCi">
+                                <rect key="frame" x="45" y="324" width="284" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.50588235290000005" green="0.56078431370000004" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RK6-uf-Hcn" userLabel="Pause">
+                                <rect key="frame" x="147" y="457" width="80" height="80"/>
+                                <state key="normal" image="pause"/>
+                                <connections>
+                                    <action selector="pauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yfo-VK-ji0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSs-xq-cBE" userLabel="Play">
+                                <rect key="frame" x="147" y="457" width="80" height="80"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jOO-Q6-CKd"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="on0-aM-4SU">
+                                <rect key="frame" x="246" y="555" width="121" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RK6-uf-Hcn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7I3-QD-MwL"/>
+                            <constraint firstItem="Eyg-CQ-Kyd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gfs-aW-QMb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kAZ-OO-SCi" secondAttribute="trailing" constant="30" id="GsY-ii-aMw"/>
+                            <constraint firstItem="kAZ-OO-SCi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PXk-Ft-1iB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Eyg-CQ-Kyd" secondAttribute="bottom" constant="42" id="U5Q-gr-3n0"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="kAZ-OO-SCi" secondAttribute="leading" constant="-29" id="baW-8B-oj5"/>
+                            <constraint firstItem="TSs-xq-cBE" firstAttribute="centerY" secondItem="RK6-uf-Hcn" secondAttribute="centerY" id="co2-nk-8T0"/>
+                            <constraint firstItem="TSs-xq-cBE" firstAttribute="centerX" secondItem="RK6-uf-Hcn" secondAttribute="centerX" id="cyl-2c-ZSe"/>
+                            <constraint firstItem="VL8-Eu-jTW" firstAttribute="centerX" secondItem="Eyg-CQ-Kyd" secondAttribute="centerX" id="f5U-yN-ocR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RK6-uf-Hcn" secondAttribute="bottom" constant="130" id="fT5-Bf-gQI"/>
+                            <constraint firstItem="VL8-Eu-jTW" firstAttribute="centerY" secondItem="Eyg-CQ-Kyd" secondAttribute="centerY" id="qLF-Ux-9re"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pauseButton" destination="RK6-uf-Hcn" id="MuV-Ez-HM5"/>
+                        <outlet property="playButton" destination="TSs-xq-cBE" id="VGO-3J-SyW"/>
+                        <outlet property="recordButton" destination="Eyg-CQ-Kyd" id="5du-Lq-1GV"/>
+                        <outlet property="resetButton" destination="VL8-Eu-jTW" id="ZQR-Na-0Bh"/>
+                        <outlet property="statusLabel" destination="kAZ-OO-SCi" id="xOs-uC-DLh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="80" height="80"/>
+        <image name="play" width="80" height="80"/>
+    </resources>
+</document>
