@@ -12,16 +12,11 @@ import UIKit
 
 class Utils
 {
-    private struct Static
-    {
-        static let slash = "/"
-    }
-    
     class func trimSlashPrefix(from string: String) -> String
     {
-        if string.hasPrefix(Static.slash)
+        if string.hasPrefix("/")
         {
-            return string.substring(from: string.index(after: string.startIndex))
+            return String(string.dropFirst())
         }
         
         return string

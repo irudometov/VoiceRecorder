@@ -11,7 +11,6 @@
 		36508C5D1F83E12500403423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36508C2D1F83E12500403423 /* Assets.xcassets */; };
 		36508C5E1F83E12500403423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36508C2E1F83E12500403423 /* LaunchScreen.storyboard */; };
 		36508C5F1F83E12500403423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36508C301F83E12500403423 /* Main.storyboard */; };
-		36508C691F83E12500403423 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36508C441F83E12500403423 /* Info.plist */; };
 		36508C9B1F83E27A00403423 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36508C771F83E27A00403423 /* AudioPlayer.swift */; };
 		36508C9C1F83E27A00403423 /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36508C791F83E27A00403423 /* AudioRecorder.swift */; };
 		36508C9D1F83E27A00403423 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36508C7B1F83E27A00403423 /* String+Localized.swift */; };
@@ -33,16 +32,6 @@
 		36A84BCD1F82771F00749504 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A84BCC1F82771F00749504 /* AVFoundation.framework */; };
 		B45C999DF8B568892B1A63A8 /* Pods_VoiceRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7D5250A6606EAD506334D8C /* Pods_VoiceRecorder.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		36A84BA11F82721700749504 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36A84B841F82721700749504 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36A84B8B1F82721700749504;
-			remoteInfo = PlayerRecorder;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03460BC0EBD2BC12B06B609B /* Pods-PlayerRecorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerRecorder.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-PlayerRecorder/Pods-PlayerRecorder.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,7 +59,6 @@
 		36508C991F83E27A00403423 /* VoiceRecorderViewModel+Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VoiceRecorderViewModel+Recorder.swift"; sourceTree = "<group>"; };
 		36508C9A1F83E27A00403423 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 		36A84B8C1F82721700749504 /* VoiceRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		36A84BA01F82721700749504 /* VoiceRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A84BCC1F82771F00749504 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A0B0471A8D8014BD9EEFB0FE /* Pods-PlayerRecorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerRecorder.release.xcconfig"; path = "../Pods/Target Support Files/Pods-PlayerRecorder/Pods-PlayerRecorder.release.xcconfig"; sourceTree = "<group>"; };
 		A7D5250A6606EAD506334D8C /* Pods_VoiceRecorder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceRecorder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,13 +73,6 @@
 			files = (
 				36A84BCD1F82771F00749504 /* AVFoundation.framework in Frameworks */,
 				B45C999DF8B568892B1A63A8 /* Pods_VoiceRecorder.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36A84B9D1F82721700749504 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				36A84B8C1F82721700749504 /* VoiceRecorder.app */,
-				36A84BA01F82721700749504 /* VoiceRecorderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,24 +330,6 @@
 			productReference = 36A84B8C1F82721700749504 /* VoiceRecorder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36A84B9F1F82721700749504 /* VoiceRecorderTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36A84BAC1F82721700749504 /* Build configuration list for PBXNativeTarget "VoiceRecorderTests" */;
-			buildPhases = (
-				36A84B9C1F82721700749504 /* Sources */,
-				36A84B9D1F82721700749504 /* Frameworks */,
-				36A84B9E1F82721700749504 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				36A84BA21F82721700749504 /* PBXTargetDependency */,
-			);
-			name = VoiceRecorderTests;
-			productName = PlayerRecorderTests;
-			productReference = 36A84BA01F82721700749504 /* VoiceRecorderTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -375,19 +337,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Ilya Rudometov";
 				TargetAttributes = {
 					36A84B8B1F82721700749504 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = T4FZEXKFYW;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
-					};
-					36A84B9F1F82721700749504 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T4FZEXKFYW;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 36A84B8B1F82721700749504;
 					};
 				};
 			};
@@ -405,7 +362,6 @@
 			projectRoot = "";
 			targets = (
 				36A84B8B1F82721700749504 /* VoiceRecorder */,
-				36A84B9F1F82721700749504 /* VoiceRecorderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -416,17 +372,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				36508CA41F83E27A00403423 /* Localizable.strings in Resources */,
-				36508C691F83E12500403423 /* Info.plist in Resources */,
 				36508C5F1F83E12500403423 /* Main.storyboard in Resources */,
 				36508C5D1F83E12500403423 /* Assets.xcassets in Resources */,
 				36508C5E1F83E12500403423 /* LaunchScreen.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36A84B9E1F82721700749504 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,22 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36A84B9C1F82721700749504 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		36A84BA21F82721700749504 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36A84B8B1F82721700749504 /* VoiceRecorder */;
-			targetProxy = 36A84BA11F82721700749504 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36508C2E1F83E12500403423 /* LaunchScreen.storyboard */ = {
@@ -553,7 +486,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -561,7 +496,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -603,7 +542,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -611,7 +552,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -647,7 +592,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irudometov.VoiceRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -662,37 +608,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.irudometov.VoiceRecorder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		36A84BAD1F82721700749504 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = T4FZEXKFYW;
-				INFOPLIST_FILE = VoiceRecorderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.irudometov.VoiceRecorderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceRecorder.app/VoiceRecorder";
-			};
-			name = Debug;
-		};
-		36A84BAE1F82721700749504 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = T4FZEXKFYW;
-				INFOPLIST_FILE = VoiceRecorderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.irudometov.VoiceRecorderTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceRecorder.app/VoiceRecorder";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -713,15 +630,6 @@
 			buildConfigurations = (
 				36A84BAA1F82721700749504 /* Debug */,
 				36A84BAB1F82721700749504 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36A84BAC1F82721700749504 /* Build configuration list for PBXNativeTarget "VoiceRecorderTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36A84BAD1F82721700749504 /* Debug */,
-				36A84BAE1F82721700749504 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

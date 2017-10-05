@@ -43,7 +43,7 @@ extension UIViewController
             alert.addAction(UIAlertAction(title: title, style: .default, handler: okAction))
         }
         
-        self.present(alert, animated: true, completion: { _ in })
+        self.present(alert, animated: true, completion: nil)
         
         return alert
     }
