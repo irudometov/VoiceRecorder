@@ -47,15 +47,15 @@ class VoiceRecorderViewController: UIViewController
         self.viewModel = VoiceRecorderViewModel(fileStorage: fileStorage, apiClient: apiClient)
         self.setDisplayMode(.record, hard: true)
         
-        if var button = recordButton
+        if let button = recordButton
         {
-            self.subscribeForRecordButtonEvents(&button)
+            self.subscribeForRecordButtonEvents(button)
         }
     }
     
     // MARK: - Record button events
     
-    private func subscribeForRecordButtonEvents(_ recordButton: inout TapAndHoldButton)
+    private func subscribeForRecordButtonEvents(_ recordButton: TapAndHoldButton)
     {
         recordButton.didReceiveTouch = { [unowned self] (button) in
             

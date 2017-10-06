@@ -19,14 +19,14 @@ class FileStorage: NSObject, IFileStorage
         static let audioFileExtension = "m4a"
     }
     
-    private (set) public var defaultFileExtension: String?
+    public let defaultFileExtension: String
     
     // MARK: - init / deinit
     
     init(defaultFileExtension: String = Static.audioFileExtension)
     {
-        super.init()
         self.defaultFileExtension = defaultFileExtension
+        super.init()
     }
     
     func createDirectoriesForFile(atPath path: String)

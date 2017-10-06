@@ -24,7 +24,7 @@ extension VoiceRecorderViewModel
             fileStorage.createDirectoriesForFile(atPath: url.path)
             
             recorder = AudioRecorder(outputFileURL: url)
-            subscribeForRecorderEvents(&recorder!)
+            subscribeForRecorderEvents(recorder!)
         }
         
         // Start recording...
@@ -37,7 +37,7 @@ extension VoiceRecorderViewModel
         recorder?.stop()
     }
     
-    private func subscribeForRecorderEvents(_ recorder: inout AudioRecorder)
+    private func subscribeForRecorderEvents(_ recorder: AudioRecorder)
     {
         recorder.didStartRecording = { [unowned self] (audioRecorder) in
             

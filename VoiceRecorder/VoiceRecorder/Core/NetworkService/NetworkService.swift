@@ -20,14 +20,14 @@ class NetworkService: AFHTTPSessionManager
     {
         var service = NetworkService(baseURL: nil)
         
-        configureService(&service)
+        configureService(service)
         
         return service
     }()
     
     // Provide a default configuration for the AFHTTPSessionManager.
     
-    private class func configureService(_ service: inout NetworkService)
+    private class func configureService(_ service: NetworkService)
     {
         // Override the default JSON response serializer.
         

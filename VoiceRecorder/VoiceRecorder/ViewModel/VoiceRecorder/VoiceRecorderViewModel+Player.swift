@@ -23,7 +23,7 @@ extension VoiceRecorderViewModel
             // Create a new audio player...
             
             player = AudioPlayer(audioFileURL: url)
-            subscribeForPlayerEvents(&player!)
+            subscribeForPlayerEvents(player!)
         }
         
         // ... and play the audio file.
@@ -41,7 +41,7 @@ extension VoiceRecorderViewModel
         player?.stop()
     }
     
-    private func subscribeForPlayerEvents(_ player: inout AudioPlayer)
+    private func subscribeForPlayerEvents(_ player: AudioPlayer)
     {
         player.didStartPlay = { [unowned self] (audioPlayer) in
             
